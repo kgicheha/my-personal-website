@@ -1,3 +1,62 @@
-body {
-    background: blue;
+.homeSection{
+    background-image: url(./images/background_image.jpeg);
+    background-position: center;
+    color: white;
+
 }
+
+.topnav a{
+    overflow: hidden;
+    display: inline-block;
+    padding: 8px 13px;
+    line-height: 32px;
+    font-size: 17px;
+    color: white;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+    text-shadow: 5px 3px grey;
+}
+
+
+/* CONTACT SECTION */
+.contactSection {
+    background: #151515;
+    text-align: center;
+}
+.contactSection h3 {
+    color: #F06000;
+    font-size: 22px;
+
+}
+.contactSection h2{
+    color: white;
+    font-size: 28px;
+}
+.contactSection p{
+    color: lightgray;
+    font-size: 20px;
+}
+.contactSection h4 {
+    color: lightgray;
+}
+#emailLogo, #linkedInLogo{
+    color: white;
+    font-size: 36px;
+}
+
+#linkedInLink {
+    color: #11ABB0;
+    border-bottom-style: none;
+
+}
+/* .emailInfo {
+    float: left;
+}
+.linkedInfo {
+    float: right;
+} */
