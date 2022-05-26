@@ -1,32 +1,246 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* -----NAVBAR----- */
+
+.navBar {
+    font-size: 18px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: gray;
+    justify-content: space-between;
+    padding: 0px;
+    height: 50px;
+}
+
+.main-nav {
+    list-style-type: none;
+    /* margin: 0;
+    padding: 0; */
+}
+.nav-links {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+.main-nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+
+/* -----HOME SECTION----- */
+
 .homeSection{
     background-image: url(./images/background_image.jpeg);
     background-position: center;
-    color: white;
+    height: 660px;
+    padding-top: 300px;
 
 }
-
-.topnav a{
-    overflow: hidden;
-    display: inline-block;
-    padding: 8px 13px;
-    line-height: 32px;
-    font-size: 17px;
-    color: white;
-
-}
-
-h1{
+.homeSection h1{
     text-align: center;
     font-size: 90px;
     font-weight: bold;
     text-shadow: 5px 3px grey;
+    color: white;
+
+}
+.homeSection h2 {
+    text-align: center;
+    font-size: 25px;
+    color: white;
+
+}
+.homeIcons {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+
+}
+
+/* -----ABOUT ME SECTION----- */
+.aboutMeSection {
+    height: 500px;
+    background: black;
+    padding: 15px;
+}
+.aboutMeSection h3 {
+    color: #F06000;
+    font-size: 22px;
+    text-align: center;
+}
+.aboutMeSection h2{
+    color: white;
+    font-size: 28px;
+    text-align: center;
+}
+.aboutMeSection p {
+    color: lightgray;
+    font-size: 22px;
+    float: left;
+}
+
+.profileInfo {
+    margin: 50px;
+    padding: 30px;
+
+}
+
+.profileInfo img{
+    height: 12rem;
+    width: 12rem;
+    border: 1px solid #F06000;
+    border-radius: 50%;
+    margin: 0.9rem 1rem 0 2rem;
+    float: left;
 }
 
 
-/* CONTACT SECTION */
-.contactSection {
-    background: #151515;
+
+
+/* ------RESUME SECTION------ */
+.resumeSection {
+    background: white;
+
+}
+
+.resumeSection h3 {
+    color: #F06000;
+    font-size: 22px;
     text-align: center;
+}
+.resumeSection h2{
+    color: black;
+    font-size: 28px;
+    text-align: center;
+}
+.resumeSection h4 {
+    color: #F06000;
+    font-size: 20px;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+
+  /* The actual timeline (the vertical ruler) */
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: lightgray;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+
+  /* Container around content */
+  .container {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+
+  /* The circles on the timeline */
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  /* Place the container to the left */
+  .left {
+    left: 0;
+  }
+
+  /* Place the container to the right */
+  .right {
+    left: 50%;
+  }
+
+  /* Add arrows to the left container (pointing right) */
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+
+  /* Add arrows to the right container (pointing left) */
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Fix the circle for containers on the right side */
+  .right::after {
+    left: -16px;
+  }
+  /*  The actual content */
+.content {
+  padding: 20px 30px;
+  position: relative;
+  border-radius: 6px;
+}
+
+
+.content h2 {
+    font-size: 24px;
+}
+
+
+/* -----PROJECT SECTIION----- */
+.projectSection {
+    background: #ebeeee;
+    text-align: center;
+    height: 900px;
+    padding: 15px;
+    margin: 0px;
+}
+.projectSection h3 {
+    color: #F06000;
+    font-size: 22px;
+}
+.projectSection h2{
+    color: black;
+    font-size: 28px;
+}
+
+/* ------CONTACT SECTION------ */
+.contactSection {
+    background: #313131;
+    text-align: center;
+    height: 350px;
+    padding: 15px;
+    margin: 0px;
+
 }
 .contactSection h3 {
     color: #F06000;
@@ -54,9 +268,15 @@ h1{
     border-bottom-style: none;
 
 }
-/* .emailInfo {
-    float: left;
+.contactInfo {
+    margin-top: 50px;
+
+}
+.emailInfo {
+    display:inline-block;
+
 }
 .linkedInfo {
-    float: right;
-} */
+    display:inline-block;
+    margin-left: 100px;
+}
